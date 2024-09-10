@@ -21,3 +21,4 @@ The main purposes of the document are
 ## Intended Audience
 * Participants in relevant W3C Working Groups, Interest Groups, and Community Groups contributing to specifications, accessibility guidance, or Web technologies connected with machine learning or generative AI.
 * Researchers or software developers engaged in the use of these technologies, and who wish to enhance their knowledge of accessibility issues prior to publication of any formal guidance by the W3C or inclusion of accessibility considerations in applicable W3C specifications.
+* Developers of applications employing machine learning, including generative AI, seeking to understand accessibility considerations prior to the development of any formal, W3C guidance.
