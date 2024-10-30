@@ -1,20 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.1.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -136,8 +123,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "apa",
   "github": "w3c/ai-accessibility",
   "maxTocLevel": 4,
-  "publishISODate": "2024-09-10T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 10 September 2024"
+  "publishISODate": "2024-10-30T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 30 October 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 
@@ -145,7 +132,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Accessibility of machine learning and generative AI</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-09-10">10 September 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-10-30">30 October 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -265,7 +252,35 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </section>
   <section id="purpose-and-scope-of-this-document"><div class="header-wrapper"><h2 id="x2-purpose-and-scope-of-this-document"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</h2><a class="self-link" href="#purpose-and-scope-of-this-document" aria-label="Permalink for Section 2."></a></div>
     
-    <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span></div><p class="">The scope and audience of this document are presently being defined. Work in progress can be found in a <a href="planning/scope.html">separate document</a>.</p></div>
+    <p>This document addresses issues of accessibility raised by machine learning and generative AI that lie within the following scope.</p>
+    <ol>
+      <li><p>The use of machine learning or generative AI to enhance the accessibility of Web content, including its application to</p>
+        <ul>
+          <li>code generation,</li>
+          <li>web content creation and authoring tools,</li>
+          <li>accessibility evaluation and content remediation, and</li>
+          <li>the delivery of Web content to users (e.g., with automated accessibility enhancements).</li>
+        </ul></li>
+        <li><p>The application of machine learning-based AI by users themselves, including</p>
+          <ul>
+            <li>its use in assistive technologies,</li>
+            <li>its application in accessibility-related features of user agents,</li>
+            <li>its inclusion in the accessibility features of Web-based applications (e.g., in implementing speech recognition as part of an automated captioning feature in a meeting application), and</li>
+            <li>the accessibility of Web-based applications that support the use of generative AI to create content, notably the problem of ensuring that the output of such applications satisfies accessibility requirements for authors and audiences with disabilities.</li>
+          </ul></li>
+    </ol>
+    <p>In contributing to an understanding of these topics, this document</p>
+    <ul>
+      <li>Identifies accessibility issues to be considered in connection with the applications described above,</li>
+      <li>identifies applicable <abbr title="World Wide Web Consortium">W3C</abbr> accessibility guidance that already exists, and</li>
+      <li>characterizes potential approaches or solutions that may resolve the  accessibility issues identified.</li>
+    </ul>
+    <p>The principal audiences of this document are</p>
+    <ul>
+      <li>participants in relevant <abbr title="World Wide Web Consortium">W3C</abbr> Working Groups, Interest Groups, and Community Groups contributing to specifications, accessibility guidance, or Web technologies connected with machine learning or generative AI,</li>
+      <li>Researchers or software developers engaged in the use of these technologies, and who wish to enhance their knowledge of accessibility issues prior to publication of any formal guidance by the <abbr title="World Wide Web Consortium">W3C</abbr> or inclusion of accessibility considerations in applicable <abbr title="World Wide Web Consortium">W3C</abbr> specifications, and</li>
+      <li>Developers of applications employing machine learning, including generative AI, seeking to understand accessibility considerations prior to the development of any formal, <abbr title="World Wide Web Consortium">W3C</abbr> guidance.</li>
+    </ul>
   </section>
   <section id="ai-accessibility-use-cases-0"><div class="header-wrapper"><h2 id="ai-accessibility-use-cases"><bdi class="secno">3. </bdi>AI accessibility use cases</h2><a class="self-link" href="#ai-accessibility-use-cases" aria-label="Permalink for Section 3."></a></div>
     
