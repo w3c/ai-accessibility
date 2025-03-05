@@ -1,7 +1,20 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.1.2">
+<meta name="generator" content="ReSpec 35.2.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -123,8 +136,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "apa",
   "github": "w3c/ai-accessibility",
   "maxTocLevel": 4,
-  "publishISODate": "2024-10-30T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 30 October 2024"
+  "publishISODate": "2025-03-05T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 05 March 2025"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 
@@ -132,7 +145,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Accessibility of machine learning and generative AI</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-10-30">30 October 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-03-05">05 March 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -175,7 +188,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="copyright">
     <a href="https://www.w3.org/policies/#copyright">Copyright</a>
     ©
-    2024
+    2024-2025
     
     <a href="https://www.w3.org/">World Wide Web Consortium</a>.
     <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
@@ -194,6 +207,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
       https://www.w3.org/TR/.</em></p>
     <p>This is a draft collection of relevant information related to cross-disability accessibility guidance of how developments in machine learning and generative Artificial Intelligence (AI) clearly bears an impact on web accessibility standards and processes. Given the rapid changes in the consumption and development of AI design, this is intended to be a starting point to group the accessibility implications of machine learning and generative AI technologies.</p>
+    <div class="note" id="issue-container-generatedID"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="3"><span>Editor's note</span></div><aside class="">
+	    <p>This is an early draft of the document, circulated for initial public review. Future revisions are expected to have a different structure, and to address topic not treated in the current draft. These additional topics may include, but are not limited to, the following. Comments on scope and structure are welcome. See also section <a href="#scope" class="sec-ref"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</a></p>
+	    <ul>
+		    <li>Accessibility issues raised by the use of machine learning and generative AI in Web-based applications, including its interactive role in contributing to the user interface.</li>
+		    <li>The different considerations applicable to the application of machine learning in the authoring or content development environment, by contrast with the user's environment.</li>
+		    <li>The use of generative AI in software development, and in particular for developing user interface code.</li>
+	    </ul>
+	    </aside></div>
   <p>
     This document was published by the <a href="https://www.w3.org/groups/wg/apa">Accessible Platform Architectures Working Group</a> as
     an Editor's Draft. 
@@ -224,7 +245,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definitions"><bdi class="secno">1.1 </bdi>Definitions</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#artificial-intelligence"><bdi class="secno">1.1.1 </bdi>Artificial intelligence</a></li><li class="tocline"><a class="tocxref" href="#machine-learning"><bdi class="secno">1.1.2 </bdi>Machine learning</a></li><li class="tocline"><a class="tocxref" href="#generative-ai"><bdi class="secno">1.1.3 </bdi>Generative AI</a></li></ol></li><li class="tocline"><a class="tocxref" href="#accessibility-context"><bdi class="secno">1.2 </bdi>Accessibility context</a></li></ol></li><li class="tocline"><a class="tocxref" href="#purpose-and-scope-of-this-document"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</a></li><li class="tocline"><a class="tocxref" href="#ai-accessibility-use-cases"><bdi class="secno">3. </bdi>AI accessibility use cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#relevance-of-current-standards-and-guidance"><bdi class="secno">3.1 </bdi>Relevance of current standards and guidance</a></li><li class="tocline"><a class="tocxref" href="#alternative-text-for-images"><bdi class="secno">3.2 </bdi>Alternative text for images</a></li><li class="tocline"><a class="tocxref" href="#automatic-speech-recognition-for-captioning"><bdi class="secno">3.3 </bdi>Automatic Speech Recognition for captioning</a></li><li class="tocline"><a class="tocxref" href="#plain-language"><bdi class="secno">3.4 </bdi>Plain language</a></li><li class="tocline"><a class="tocxref" href="#automated-language-detection"><bdi class="secno">3.5 </bdi>Automated Language detection</a></li><li class="tocline"><a class="tocxref" href="#colour-contrast"><bdi class="secno">3.6 </bdi>Colour contrast</a></li><li class="tocline"><a class="tocxref" href="#heading-structure"><bdi class="secno">3.7 </bdi>Heading structure</a></li><li class="tocline"><a class="tocxref" href="#adjustment-of-visual-spacing"><bdi class="secno">3.8 </bdi>Adjustment of visual spacing</a></li><li class="tocline"><a class="tocxref" href="#link-purpose"><bdi class="secno">3.9 </bdi> Link purpose</a></li><li class="tocline"><a class="tocxref" href="#sign-language"><bdi class="secno">3.10 </bdi>Sign language</a></li></ol></li><li class="tocline"><a class="tocxref" href="#evaluation-tools"><bdi class="secno">4. </bdi>Evaluation tools</a></li><li class="tocline"><a class="tocxref" href="#accessibility-overlays"><bdi class="secno">5. </bdi>Accessibility Overlays</a></li><li class="tocline"><a class="tocxref" href="#reference-list"><bdi class="secno">6. </bdi>Reference List</a></li></ol></nav>
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definitions"><bdi class="secno">1.1 </bdi>Definitions</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#artificial-intelligence"><bdi class="secno">1.1.1 </bdi>Artificial intelligence</a></li><li class="tocline"><a class="tocxref" href="#machine-learning"><bdi class="secno">1.1.2 </bdi>Machine learning</a></li><li class="tocline"><a class="tocxref" href="#generative-ai"><bdi class="secno">1.1.3 </bdi>Generative AI</a></li></ol></li><li class="tocline"><a class="tocxref" href="#accessibility-context"><bdi class="secno">1.2 </bdi>Accessibility context</a></li></ol></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</a></li><li class="tocline"><a class="tocxref" href="#ai-accessibility-use-cases"><bdi class="secno">3. </bdi>AI accessibility use cases</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#relevance-of-current-standards-and-guidance"><bdi class="secno">3.1 </bdi>Relevance of current standards and guidance</a></li><li class="tocline"><a class="tocxref" href="#alternative-text-for-images"><bdi class="secno">3.2 </bdi>Alternative text for images</a></li><li class="tocline"><a class="tocxref" href="#automatic-speech-recognition-for-captioning"><bdi class="secno">3.3 </bdi>Automatic Speech Recognition for captioning</a></li><li class="tocline"><a class="tocxref" href="#plain-language"><bdi class="secno">3.4 </bdi>Plain language</a></li><li class="tocline"><a class="tocxref" href="#automated-language-detection"><bdi class="secno">3.5 </bdi>Automated Language detection</a></li><li class="tocline"><a class="tocxref" href="#colour-contrast"><bdi class="secno">3.6 </bdi>Colour contrast</a></li><li class="tocline"><a class="tocxref" href="#heading-structure"><bdi class="secno">3.7 </bdi>Heading structure</a></li><li class="tocline"><a class="tocxref" href="#adjustment-of-visual-spacing"><bdi class="secno">3.8 </bdi>Adjustment of visual spacing</a></li><li class="tocline"><a class="tocxref" href="#link-purpose"><bdi class="secno">3.9 </bdi> Link purpose</a></li><li class="tocline"><a class="tocxref" href="#sign-language"><bdi class="secno">3.10 </bdi>Sign language</a></li></ol></li><li class="tocline"><a class="tocxref" href="#evaluation-tools"><bdi class="secno">4. </bdi>Evaluation tools</a></li><li class="tocline"><a class="tocxref" href="#accessibility-overlays"><bdi class="secno">5. </bdi>Accessibility Overlays</a></li><li class="tocline"><a class="tocxref" href="#reference-list"><bdi class="secno">6. </bdi>Reference List</a></li></ol></nav>
   <section id="introduction-0"><div class="header-wrapper"><h2 id="introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
     
     <section id="definitions-0"><div class="header-wrapper"><h3 id="definitions"><bdi class="secno">1.1 </bdi>Definitions</h3><a class="self-link" href="#definitions" aria-label="Permalink for Section 1.1"></a></div>
@@ -250,7 +271,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <p>However, the emerging nature of AI in its machine learning, and more specifically, its generative context, has made it difficult for users and developers alike to accurately perceive how effective automated accessibility tools are, and the degree of reliability they may offer in future directions. As such, this guidance is designed to provide some assistance in how machine learning is currently providing support, and its current level of effectiveness.</p>
     </section>
   </section>
-  <section id="purpose-and-scope-of-this-document"><div class="header-wrapper"><h2 id="x2-purpose-and-scope-of-this-document"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</h2><a class="self-link" href="#purpose-and-scope-of-this-document" aria-label="Permalink for Section 2."></a></div>
+  <section id="scope"><div class="header-wrapper"><h2 id="x2-purpose-and-scope-of-this-document"><bdi class="secno">2. </bdi>Purpose and Scope of this Document</h2><a class="self-link" href="#scope" aria-label="Permalink for Section 2."></a></div>
     
     <p>This document addresses issues of accessibility raised by machine learning and generative AI that lie within the following scope.</p>
     <ol>
