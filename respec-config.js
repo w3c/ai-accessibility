@@ -61,6 +61,7 @@ var respecConfig = {
 		{
 			name: "Joshue O'Connor",
 			url: "https://interaccess.ie",
+			company: "InterAccess",
 			w3cid: 108
 		},
 	],
