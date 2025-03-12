@@ -58,6 +58,11 @@ var respecConfig = {
 			url: "http://rednote.net/",
 			w3cid: 33688
 		},
+    {
+			name: "Joshue O'Connor",
+			mailto: "josh@interaccess.ie",
+			w3cid: 41218
+		},
 	],
 
 	// authors, add as many as you like.
