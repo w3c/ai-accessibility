@@ -62,6 +62,7 @@ var respecConfig = {
 			name: "Joshue O'Connor",
 			mailto: "josh@interaccess.ie",
 			w3cid: 41218
+			url: "https://interaccess.ie",
 		},
 	],
 
