@@ -11,8 +11,8 @@
 
 <body>
   <section id="abstract">
-    <p>Recent advances in machine learning and generative artificial intelligence (<abbr>AI</abbr>) have expanded the range of problems for which effective computational solutions are feasible. Examples of such problems include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learing technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities, encompassing issues relevant to content authors, users, and accessibility evaluators. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications.</p>
-    <p>Fundamental concepts of machine learning and generative AI are first introduced. The discussion then centers on a series of cases illustrative of accessibiltiy-related applications transformed by this technology.</p>
+    <p>Recent advances in machine learning and generative artificial intelligence (<abbr>AI</abbr>) have expanded the range of possibility and problems for which effective computational solutions are feasible. Examples of such challenges include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learing technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities including, authors who want to create accessible content, to accessibility evaluators and testers. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications for users and accessibility practitioners alike.</p>
+    <p>Fundamental concepts of machine learning and generative AI are first introduced. The discussion then centers on a series of cases illustrative of accessibiltiy-related applications that are being transformed by this technology.</p>
   </section>
   <section id="sotd">
     <p>This is a draft collection of relevant information related to cross-disability accessibility guidance of how developments in machine learning and generative Artificial Intelligence (AI) clearly bears an impact on web accessibility standards and processes. Given the rapid changes in the consumption and development of AI design, this is intended to be a starting point to group the accessibility implications of machine learning and generative AI technologies.</p>
@@ -87,7 +87,13 @@
     </ul>
   </section>
   <section>
-    <h1 id="ai-accessibility-use-cases">AI accessibility use cases</h1>
+    <h1 id="ai-authoring">AI and ML in authoring accessible content</h1>
+    <p>@@ This section will discuss the nature of the role of AI and ML in assisting in the creation of accessible content. Some questions to consider are: What is needed in this space? How can we have confidence that AI/ML generated content is meeting real user needs? What does AI or ML do poorly? How can quality be determined? What guardrails are needed in order to ensure repair heuristics are of a high standard? </p>
+  </section>
+
+  <section>
+    <h1 id="ai-accessibility-use-cases">AI and the User Perspective - accessibility use cases</h1>
+    <p>@@ This section explores the current guidance and standards as well as what relevant standards need to be considered when incorporating AI or ML technologies into development pipelines for accessible content creation.</p>
     <section>
       <h2 id="relevance-of-current-standards-and-guidance">Relevance of current standards and guidance</h2>
       <p>The W3C Accessibility Initiative (WAI) consists of three guidelines capable of assisting in the creation of accessible content that may potentially be supported by AI features. These guidelines include standards relating to web content, user agents and authoring tools.</p>
@@ -151,15 +157,21 @@
     </section>
   </section>
   <section>
-    <h2 id="evaluation-tools">Evaluation tools</h2>
+    <h1 id="evaluation-tools">AI for evaluation tools & accessibility testing</h1>
     <p>At present, there are several automated testing tools available based on coding assessments within websites, apps and documents. Such tools are often employed to identify issues of non-compliance with the WCAG standard, additionally providing subsequent guidance in remediation. Some of these tools are free of charge but limited in functionality, while others provide enterprise-level remediation guidance, and is capable of monitoring web content in real time.</p>
     <p>Although these tools are generally considered a helpful companion for remediation, they currently possess flaws; some notable issues include acquiring different results between the use of different tools (Ismailova &amp; Inal, 2022), difficulty in determining if the tool has identified a specific issue, or simply noting that the issue requires review. These issues follow research that has constantly indicated automated tools bear the restricted capacity of executing low-level coverage in checking and recommending remediations, with the remaining requiring some form of intervention (Vigo et al., 2013).</p>
     <p>While automated testing tools have been largely based on scripting language such as JavaScript to manually review and report on code, deep machine learning is likely to improve these tools to a considerable degree going forward, allowing the application of generative AI processes to more clearly identified issues. For instance, most tools may accurately determine if alternative text is available for images but cannot determine the effectiveness of present alternative text. With the inclusion of generative AI, improvements are likely to be offered in what automated tools can evaluate, such as the quality of captions, descriptive links and correcting other issues mentioned previously such as the use of language and headings. Although there is currently little evidence of generative AI featuring in such tools, it is very much possible that testing and evaluation of web content will improve along with the rest of the rapidly evolving generative AI content.</p>
   </section>
   <section>
+    <h1 id="accessibility-user-interface">AI and user interface generation</h1>
+    <p>@@This section will discuss how AI can be used to create and/or modify the user interface.Some core things to consider: What need is being met when we ask AI to modify or change a UI? What does an MVP AI generated UI look like?. How will the quality of generated user interfaces be determined? Are there potential harms and anti-patterns that need to be considered?</p>
     <h2 id="accessibility-overlays">Accessibility Overlays</h2>
     <p>The rapid increase of accessibility overlays on websites has been viewed as rather controversial by people with disability. While these tools could be useful for individuals unfamiliar with assistive technologies that are built into computing and mobile devices, critics of overlays point to the tools being marketed as an accessibility solution, thus causing the code to interrupt the use of more developed assistive technologies such as screen readers (Morris, 2022). Furthermore, these overlay features carry the tendency to be limited in functionality as compared to tools installed in an operating system.</p>
     <p>However, the promise of generative AI may be able to address the criticism that such tools lack functionality. An accessibility overlay capable of utilising generative AI functionality may be able to provide increased real-time support in overcoming accessibility issues or improving its interpretation of content, such as for images, language and page structure. Although these tools are currently promoted as a collection of accessibility features somewhat independent from the content, the applicability of an overlay that contributes accessibility improvements is similar to the use of AI chatbots and other prompting mechanisms, thereby suggesting this may prove to be another area where generative AI could introduce improvements.</p>
+  </section>
+  <section>
+    <h1 id="potential-harms-and-anti-patterns">Potential harms and anti-patterns in AI / ML</h1>
+    <p>@@This section looks at some of the existential aspects of AI / ML in the context of supporting the needs of people with disabilities successfully, and explores its etiology or need to exist, some possible threats in terms of the deterioration of quality, the overreliance on tools that may be fundamentally flawed, as well as any issues with outsourcing the quality aspects of universal or inclusive design that is build on deep practitioner knowledge of the user needs of people with disabilities versus light weight but brute force computational approaches that may be built on leaky abstractions and superficial understanding of the technical requirements needed to build solid semantically robust and usable web content.</p>
   </section>
   <section>
     <h2 id="reference-list">Reference List</h2>
