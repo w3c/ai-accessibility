@@ -87,7 +87,7 @@ dd{margin-left:0}
 }
 </style>
 <meta name="color-scheme" content="light">
-<meta name="description" content="Recent advances in machine learning and generative artificial intelligence (AI) have expanded the range of problems for which effective computational solutions are feasible. Examples of such problems include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learing technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities, encompassing issues relevant to content authors, users, and accessibility evaluators. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications.">
+<meta name="description" content="Recent advances in machine learning and generative artificial intelligence (AI) have expanded the range of problems for which effective computational solutions are feasible. Examples of such problems include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learning technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities, encompassing issues relevant to content authors, users, and accessibility evaluators. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications.">
 <style>
 var:hover{text-decoration:underline;cursor:pointer}
 var.respec-hl{color:var(--color,#000);background-color:var(--bg-color);box-shadow:0 0 0 2px var(--bg-color)}
@@ -159,16 +159,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "group": "apa",
   "github": "w3c/ai-accessibility",
   "maxTocLevel": 4,
-  "publishISODate": "2025-04-09T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 09 April 2025"
+  "publishISODate": "2025-04-16T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 16 April 2025"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 
-<body class="h-entry informative toc-inline"><div class="head">
+<body class="h-entry informative"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Accessibility of machine learning and generative AI</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-04-09">09 April 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-04-16">16 April 2025</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -224,8 +224,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <hr title="Separator for header">
   </div>
    <section id="abstract" class="introductory"><h2>Abstract</h2>
-    <p>Recent advances in machine learning and generative artificial intelligence (<abbr>AI</abbr>) have expanded the range of problems for which effective computational solutions are feasible. Examples of such problems include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learing technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities, encompassing issues relevant to content authors, users, and accessibility evaluators. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications.</p>
-    <p>Fundamental concepts of machine learning and generative AI are first introduced. The discussion then centers on a series of cases illustrative of accessibiltiy-related applications transformed by this technology.</p>
+    <p>Recent advances in machine learning and generative artificial intelligence (<abbr>AI</abbr>) have expanded the range of problems for which effective computational solutions are feasible. Examples of such problems include improving the accuracy of speech recognition, image recognition, performing programming tasks, question answering, and natural language interaction. Machine learning technology also has unique and significant limitations. This document examines the consequences of these developments for the accessibility of the Web to people with disabilities, encompassing issues relevant to content authors, users, and accessibility evaluators. In doing so, it both addresses the potential benefits and clarifies issues that should be considered in the further evolution of Web standards and applications.</p>
+    <p>Fundamental concepts of machine learning and generative AI are first introduced. The discussion then centers on a series of cases illustrative of accessibility related applications transformed by this technology.</p>
   </section>
   <section id="sotd" class="introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
       document at the time of its publication. A list of current <abbr title="World Wide Web Consortium">W3C</abbr>
@@ -412,15 +412,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </section>
   <section id="ai-and-user-interface-generation"><div class="header-wrapper"><h2 id="accessibility-user-interface"><bdi class="secno">6. </bdi>AI and user interface generation</h2><a class="self-link" href="#accessibility-user-interface" aria-label="Permalink for Section 6."></a></div>
     
-    <p>@@This section will discuss how AI can be used to create and/or modify the user interface.Some core things to consider: What need is being met when we ask AI to modify or change a UI? What does an MVP AI generated UI look like?. How will the quality of generated user interfaces be determined? Are there potential harms and anti-patterns that need to be considered?</p>
+    <p>@@This section will discuss how AI can be used to create and/or modify the user interface. Some core things to consider: What need is being met when we ask AI to modify or change a UI? What does an MVP AI generated UI look like?. How will the quality of generated user interfaces be determined? Are there potential harms and anti-patterns that need to be considered?</p>
     <section id="accessibility-overlays-0"><div class="header-wrapper"><h3 id="accessibility-overlays"><bdi class="secno">6.1 </bdi>Accessibility Overlays</h3><a class="self-link" href="#accessibility-overlays" aria-label="Permalink for Section 6.1"></a></div>
     <p>The rapid increase of accessibility overlays on websites has been viewed as rather controversial by people with disability. While these tools could be useful for individuals unfamiliar with assistive technologies that are built into computing and mobile devices, critics of overlays point to the tools being marketed as an accessibility solution, thus causing the code to interrupt the use of more developed assistive technologies such as screen readers (Morris, 2022). Furthermore, these overlay features carry the tendency to be limited in functionality as compared to tools installed in an operating system.</p>
     <p>However, the promise of generative AI may be able to address the criticism that such tools lack functionality. An accessibility overlay capable of utilising generative AI functionality may be able to provide increased real-time support in overcoming accessibility issues or improving its interpretation of content, such as for images, language and page structure. Although these tools are currently promoted as a collection of accessibility features somewhat independent from the content, the applicability of an overlay that contributes accessibility improvements is similar to the use of AI chatbots and other prompting mechanisms, thereby suggesting this may prove to be another area where generative AI could introduce improvements.</p>
   </section></section>
   <section id="potential-harms-and-anti-patterns-in-ai-ml"><div class="header-wrapper"><h2 id="potential-harms-and-anti-patterns"><bdi class="secno">7. </bdi>Potential harms and anti-patterns in AI / ML</h2><a class="self-link" href="#potential-harms-and-anti-patterns" aria-label="Permalink for Section 7."></a></div>
     
-    <p>@@This section looks at some of the existential aspects of AI / ML. These are in the context of supporting the needs of people with disabilities successfully, and explores the role of AI/ML from the perspective of etiology or its reason for impacting the field of accessibiliy for better or for worse. </p> 
-    <p>There are also some potential threats in terms of the deterioration of overall quality in the field, or moving towwards an overreliance on tools that may be fundamentally flawed or biased.</p>
+    <p>@@This section looks at some of the existential aspects of AI / ML. These are in the context of supporting the needs of people with disabilities successfully, and explores the role of AI/ML from the perspective of its principle etiology or reason for being and how that may impact the field of accessibility for better or for worse. </p> 
+    <p>There are also some potential threats in terms of the deterioration of overall quality in the field, or moving towards an overreliance on tools that may be fundamentally flawed or biased.</p>
     <p>There are secondary issues or harms inherent in outsourcing human expertise where quality aspects of universal or inclusive design that are often from deep human practitioner may come in sharp contrast with brute force computational approaches to 'fixing the web' that may have a lighter architecture or be built on superficial or weaker knowledge.</p>
     <p>These AI / ML approaches may be then built on leaky abstractions and weaker understanding of both the technical requirements of best practices and the user needs they are trying to address.</p>
   </section>
