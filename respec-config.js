@@ -87,6 +87,7 @@ var respecConfig = {
 
 	group: "apa",
 	github: "w3c/ai-accessibility",
-	maxTocLevel: 4
-
+	maxTocLevel: 4,
+	preProcess: [convertBiblio],
+	postProcess: [renderBiblio],
 };
