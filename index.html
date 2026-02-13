@@ -103,18 +103,92 @@
       <p>Furthermore, the <a href="https://www.w3.org/TR/UAAG20/">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a> could also offer support, particularly in Part B, in which the creation of accessible content is of particular importance. For example, authoring tools that have automatically generated alternative text could support the creation of accessible content.</p>
     </section>
     <section>
-      <h2 id="alternative-text-for-images">Alternative text for images</h2>
-      <p>There currently exists a number of machine learning-based tools that have been integrated into popular social media platforms, alongside authoring tools, that are equipped to create an automated alternative text description based on machine learning algorithms that scan and determine the contents of visual materials, such as an image. Until recently, this automated process was considered to hold high inaccuracy to the point where its utility was questioned [[RN3]]. Recent developments have improved automated alternative text accuracy, but criticism persists due to limitations in providing detail and recognising the importance of relevant data.</p>
-      <figure><img src="bar-graph.png" alt="A graph with different colored bars Description automatically generated">
-        <figcaption>A coloured bar graph representing the favourite colour of children (inspired by an example from Twinkl, n.d.)</figcaption>
-      </figure>
-      <p>A good example can be seen in a popular image used to illustrate data (Twinkl, n.d.). The image features a classic bar graph of responses from children clarifying their favourite colour, in which yellow has been found the achieve the highest result with 9 responses. While an appropriate alternative text for the image should endeavour to capture the significant points of the graph with detail, such as its drawn intention - the information organising its X and Y axis, as well as the resulting data, the automated alternative text simply describes this image as “a graph with different coloured bars”. While technically accurate, this information lacks depth to convey important technical details from the graph.</p>
-      <figure><img src="image2.jpeg" alt="A nebula in space with stars Description automatically generated">
-        <figcaption>An image provided by the James Webb Space Telescope</figcaption>
-      </figure>
-      <p>A second example is shown through an image from the James Webb Space Telescope. As all images publicly released include automated alternative text, the alternative text for Figure 2 was compared to that of a manually created alternative text. The former reads the description, “The image is divided horizontally by an undulating line between a cloudscape forming a nebula along the bottom portion and a comparatively clear upper portion”, while the latter states: “Speckled across both portions is a starfield, showing innumerable stars of many sizes. The smallest of these are small, distant, and faint points of light. The largest of these appear larger, closer, brighter, and more fully resolved with 8-point diffraction spikes. The upper portion of the image is bluish and has wispy translucent cloudlike streaks rising from the nebula below.”</p>
-      <p>Upon observation, the automated alternative text presents a simplified iteration of the image, using the brief narration, “a nebula in space with stars”. As such, once again, this comparison supports that, while automated alternative text provided by machine learning is representative of the image being studied and could assist in delivering a basic and minimised understanding of an image, it does not have the ability to incorporate the orientation of detail required to capture the essence of the image.</p>
-      <p>Although machine learning techniques embedded in authoring tools and other platforms may provide some information, generative AI platforms that are able to create images, videos and other visual media content based on text input tend not to provide automated alternative text. Hence, this would make it difficult for people who are blind or have low vision to attain a meaningful interpretation of these AI-generated outputs.</p>
+<h2 id="alternative-text-for-images">4.2 Alternative text for images</h2>
+<p>There currently exists a number of machine learning-based tools that
+have been integrated into popular social media platforms, alongside
+authoring tools, that are equipped to create an automated alternative
+text description based on machine learning algorithms that scan and
+determine the contents of visual materials, such as an image. Until
+recently, this automated process was considered to hold high inaccuracy
+to the point where its utility was questioned [<a
+href="https://w3c.github.io/ai-accessibility/#bib-rn3"><em>RN3</em></a>].
+Recent developments have improved automated alternative text accuracy,
+but criticism persists due to limitations in providing detail and
+recognising the importance of relevant data.</p>
+<p><img src="media/image1.png" style="width:5.00694in;height:3.02083in"
+alt="A graph with different colored bars " /></p>
+<p><a
+href="https://w3c.github.io/ai-accessibility/#fig-a-coloured-bar-graph-representing-the-favourite-colour-of-children-inspired-by-an-example-from-twinkl-n-d">Figure 1</a> A
+coloured bar graph representing the favourite colour of children
+(inspired by an example from Twinkl, n.d.)</p>
+<p>A good example can be seen in a popular image used to illustrate data
+(Twinkl, n.d.). The image features a classic bar graph of responses from
+children clarifying their favourite colour, in which yellow has been
+found the achieve the highest result with 9 responses. While an
+appropriate alternative text for the image should endeavour to capture
+the significant points of the graph with detail, such as its drawn
+intention - the information organising its X and Y axis, as well as the
+resulting data, the automated alternative text on everyday applications
+such as Microsoft Word simply describes this image as “a graph with
+different coloured bars”. While technically accurate, this information
+lacks depth to convey important technical details from the graph.</p>
+<p>That said, recent evolutions in generative AI that incorporate AI
+into accessibility features, such as screenreaders, are able to provide
+a more accurate description. For example, on Google Gemini, the
+following descriptions were provided for the coloured bar graph:</p>
+<p>“The image displays a bar graph titled “Favourite Colour of Primary
+School Children”. The X-axis represents different colours: yellow, red,
+blue, green, and pink. The y-axis is labelled “Number of Votes” and goes
+up to 8. The graph shows the number of votes for each colour: Yellow has
+the most votes, followed by pink, then red, green and blue.”</p>
+<p>“The image displays a bar graph inside a white rounded rectangle
+against a black background. The graph’s title is “Favourite Colour of
+Primary School Children”. The Y-axis represents the “Number of Votes”
+from 0 to 8, and the X-axis shows the following colours: yellow, red,
+blue, green, and pink. There is a yellow bar with a value of 7, a red
+bar with a value of 5, a blue bar with a value of 2, a green bar with a
+value of 3, and a pink bar with a value of 6.”</p>
+<p>Although the descriptions for images can be seen to have
+significantly improved, the information provided changes each time the
+image is checked. This then introduces an issue of inconsistency,
+despite some relative accuracy.</p>
+<p><img src="media/image2.jpeg" style="width:4.375in;height:2.83333in"
+alt="A nebula in space with stars " /></p>
+<p><a
+href="https://w3c.github.io/ai-accessibility/#fig-an-image-provided-by-the-james-webb-space-telescope">Figure 2</a> An
+image provided by the James Webb Space Telescope</p>
+<p>A second example is shown through an image from the James Webb Space
+Telescope. As all images publicly released include automated alternative
+text, the alternative text for Figure 2 was compared to that of a
+manually created alternative text. The former reads the description,
+“The image is divided horizontally by an undulating line between a
+cloudscape forming a nebula along the bottom portion and a comparatively
+clear upper portion”, while the latter states: “Speckled across both
+portions is a starfield, showing innumerable stars of many sizes. The
+smallest of these are small, distant, and faint points of light. The
+largest of these appear larger, closer, brighter, and more fully
+resolved with 8-point diffraction spikes. The upper portion of the image
+is bluish and has wispy translucent cloudlike streaks rising from the
+nebula below.”</p>
+<p>Upon observation, the automated alternative text presents a
+simplified iteration of the image, using the brief narration, “a nebula
+in space with stars”. As such, once again, this comparison supports
+that, while automated alternative text provided by machine learning is
+representative of the image being studied and could assist in delivering
+a basic and minimised understanding of an image, it does not have the
+ability to incorporate the orientation of detail required to capture the
+essence of the image. The same can be currently said for generative AI
+that incorporate AI into accessibility features. Using Google Gemini, it
+was found that the complexity of the image makes it difficult for
+current generative AI techniques to fully comprehend the detail of the
+image.</p>
+<p>Although machine learning techniques embedded in authoring tools and
+other platforms may provide some information, generative AI platforms
+that are able to create images, videos and other visual media content
+based on text input tend not to provide automated alternative text.
+Hence, this would make it difficult for people who are blind or have low
+vision to attain a meaningful interpretation of these AI-generated
+outputs.</p>
     </section>
     <section>
       <h2 id="automatic-speech-recognition-for-captioning">Automatic Speech Recognition for captioning</h2>
@@ -166,6 +240,7 @@
   <section>
     <h1 id="accessibility-user-interface">AI and user interface generation</h1>
     <p>@@This section will discuss how AI can be used to create and/or modify the user interface. Some core things to consider: What need is being met when we ask AI to modify or change a UI? What does an MVP AI generated UI look like?. How will the quality of generated user interfaces be determined? Are there potential harms and anti-patterns that need to be considered?</p>
+    <section>
     <h2 id="accessibility-overlays">Accessibility Overlays</h2>
     <p>The rapid increase of accessibility overlays on websites has been viewed as rather controversial by people with disability. While these tools could be useful for individuals unfamiliar with assistive technologies that are built into computing and mobile devices, critics of overlays point to the tools being marketed as an accessibility solution, thus causing the code to interrupt the use of more developed assistive technologies such as screen readers [[RN9]]. Furthermore, these overlay features carry the tendency to be limited in functionality as compared to tools installed in an operating system.</p>
     <p>However, the promise of generative AI may be able to address the criticism that such tools lack functionality. An accessibility overlay capable of utilising generative AI functionality may be able to provide increased real-time support in overcoming accessibility issues or improving its interpretation of content, such as for images, language and page structure. Although these tools are currently promoted as a collection of accessibility features somewhat independent from the content, the applicability of an overlay that contributes accessibility improvements is similar to the use of AI chatbots and other prompting mechanisms, thereby suggesting this may prove to be another area where generative AI could introduce improvements.</p>
@@ -185,6 +260,7 @@ user to interact with a website provided by a particular vendor. This
 approach also opens the door for other user interfaces such as verbal
 interaction to achieve tasks, not currently provided by a vendor’s
 website.</p>
+  </section>
   </section>
   <section>
     <h1 id="potential-harms-and-anti-patterns">Potential harms and anti-patterns in AI / ML</h1>
