@@ -50,7 +50,7 @@ var respecConfig = {
 
 		{
 			name: "Jason White",
-			mailto: "jason@jasonjgw.net",
+			url: "https://jasonjgw.net/",
 			w3cid: 74028
 		},
 		{
