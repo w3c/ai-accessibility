@@ -55,7 +55,8 @@ var respecConfig = {
 		},
 		{
 			name: "Janina Sajka",
-			url: "http://rednote.net/",
+			url: "http://a11y.nyc/",
+      company: "Level Access",
 			w3cid: 33688
 		},
     {
